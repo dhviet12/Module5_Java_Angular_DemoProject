@@ -6,6 +6,11 @@
 
 <h3>-------------------</h3>
 
-<app-child-component (countChanged)="countChangedHandle($event)" ></app-child-component>
-<br>
-Parent_count: {{count_parent}}
+<!--<app-child-component (countChanged)="countChangedHandle($event)" ></app-child-component>-->
+<!--<br>-->
+<!--Parent_count: {{count_parent}}-->
+
+<app-child-component #child></app-child-component>
+<button (click)="child.increment()">+</button>
+<button (click)="child.decrement()">-</button>
+Parent count: {{child.count}}

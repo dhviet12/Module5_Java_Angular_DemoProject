@@ -6,22 +6,31 @@ import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
   styleUrls: ['./child-component.component.css']
 })
 export class ChildComponentComponent implements OnInit {
-  
+
  count: number = 0;
 
- @Output()
- countChanged: EventEmitter<number> = new EventEmitter<number>();
+//  @Output()
+//  countChanged: EventEmitter<number> = new EventEmitter<number>();
+//
+//  increment(){
+//    this.count++;
+//    this.countChanged.emit(this.count);
+//  }
+//
+//  decrement(){
+//   this.count--;
+//   this.countChanged.emit(this.count);
+// }
 
- increment(){
-   this.count++;
-   this.countChanged.emit(this.count);
- }
+  // using local variable
 
- decrement(){
-  this.count--;
-  this.countChanged.emit(this.count);
-}
+  increment(){
+    this.count++;
+  }
 
+  decrement(){
+    this.count--;
+  }
 
 
   constructor() { }

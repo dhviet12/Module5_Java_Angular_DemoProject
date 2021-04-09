@@ -6,13 +6,15 @@ import { MovieComponent } from './movie/movie.component';
 import { NgSwitchComponent } from './ng-switch/ng-switch.component';
 import { FormsModule } from '@angular/forms';
 import { ChildComponentComponent } from './child/child-component.component';
+import { TodolistComponent } from './todolist/todolist.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MovieComponent,
     NgSwitchComponent,
-    ChildComponentComponent
+    ChildComponentComponent,
+    TodolistComponent
   ],
   imports: [
     BrowserModule,
